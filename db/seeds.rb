@@ -15,7 +15,7 @@
     Reply.create(
         title: Faker::Hipster.sentence(word_count: 5),
         content: Faker::Hipster.sentence,
-        author: Faker::Twitter.screen_name
+        author: Faker::Twitter.screen_name,
         tweet_id: 34
     )
 end
