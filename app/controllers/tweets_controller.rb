@@ -36,6 +36,8 @@ def update
 end
 
 def destroy
+    tweet = Tweet.destroy(params[:id])
+    render(status: 204, json: { tweet: tweet})
 end
 
 private
