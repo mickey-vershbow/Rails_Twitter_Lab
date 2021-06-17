@@ -1,4 +1,4 @@
-class TweetsCotroller < ApplicationController
+class TweetsController < ApplicationController
 
 def index
     tweet = Tweet.all
