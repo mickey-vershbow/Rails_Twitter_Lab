@@ -25,6 +25,14 @@ def create
 end
 
 def update
+    updated_tweet = Tweet.find(params[:id])
+
+    if updated_tweet
+        updated_tweet.update(tweet_params)
+        render(status: 200, json: { tweet: updated_tweet})
+    else
+        render(status: 406, json: {tweet: updated_tweet, errors: updated_tweet.errors})
+    end
 end
 
 def destroy
