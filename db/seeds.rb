@@ -14,10 +14,15 @@
 #     )
 # end
 
-10.times do
-    Replies.create(
+4.times do
+    Reply.create(
         title: Faker::Hipster.sentence(word_count: 5),
         content: Faker::Hipster.sentence,
         author: Faker::Twitter.screen_name
+        tweet_id: 34
     )
 end
+
+# p Reply.create(title: "great post man", content: "love this", author: "whoever", tweet_id: 34)
+# p Reply.create(title: "great post man 1", content: "love this", author: "whoever", tweet_id: 34)
+# p Reply.create(title: "great post man 2", content: "love this", author: "whoever", tweet_id: 34)
