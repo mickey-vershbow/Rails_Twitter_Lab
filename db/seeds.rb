@@ -10,7 +10,7 @@
 # end
 
 
-# The above code for generating faker Tweet data WORKED, as you can see if you query Tweet.all in the database
+# Create fake reply data
 4.times do
     Reply.create(
         title: Faker::Hipster.sentence(word_count: 5),
@@ -19,9 +19,3 @@
         tweet_id: 34
     )
 end
-
-# ALTERNATE ATTEMPT ALSO FAILED
-
-# p Reply.create(title: "great post man", content: "love this", author: "whoever", tweet_id: 34)
-# p Reply.create(title: "great post man 1", content: "love this", author: "whoever", tweet_id: 34)
-# p Reply.create(title: "great post man 2", content: "love this", author: "whoever", tweet_id: 34)

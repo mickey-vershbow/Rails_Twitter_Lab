@@ -1,3 +1,3 @@
 class Reply < ApplicationRecord
-    belongs_to :tweets
+    belongs_to :tweet
 end
